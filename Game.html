@@ -20,12 +20,17 @@
 
 
             let container = document.createElement('div');
-            let image = `<img src="./cards/${cards[index]}.svg">`;
+            let image = `<img src="./cards/${cards[index]}.svg" id="${index}">`;
             
             container.innerHTML = image; 
 
             el.appendChild(container);
-            //console.log(c);
+            console.log(index);
+
+            setTimeout(() => {
+                let my_card = document.getElementById(`${index}`);
+                console.log(my_card);
+            },3000);
         
     </script>
 </body>
