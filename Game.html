@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deck Game</title>
+    <link rel="stylesheet" href="./game.css">
+</head>
+<body>
+    <div id="my_game">
+        <!--Cards are inserted here-->
+    </div>
+    <script>
+        let cards = ['1B','1J','2B','2C','2D','2H','2J','2S','3C','3D','3H','3S','4C','4D','4H','4S','5C','5D','5H','5S','6C','6D','6H','6S','7C','7D','7H','7S','8C','8D','8H','8S','9C','9D','9H','9S','AC','AD','AH','AS','JC','JD','JH','JS','KC','KD','KH','KS','QC','QD','QH','QS','TC','TD','TH','TS'];
+
+        let el = document.querySelector('#my_game');
+
+        let index = Math.floor(cards.length * Math.random(0,1)) - 1;
+
+
+            let container = document.createElement('div');
+            let image = `<img src="./cards/${cards[index]}.svg">`;
+            
+            container.innerHTML = image; 
+
+            el.appendChild(container);
+            //console.log(c);
+        
+    </script>
+</body>
+</html>

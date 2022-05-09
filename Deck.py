@@ -28,4 +28,11 @@ for v in valor:
     diamondcard = DiamondCard(v)
     heartcard = HeartCard(v)
     spadecard = SpadeCard(v)
-    cards.append(clubcard,diamondcard,heartcard,spadecard)
+    cards.append(clubcard)
+    cards.append(diamondcard)
+    cards.append(spadecard)
+    cards.append(heartcard)
+
+
+for card in cards:
+    print(card.valor)

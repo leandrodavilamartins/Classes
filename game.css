@@ -1,0 +1,9 @@
+body{
+    background-color: #151718;
+}
+
+#my_game{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
