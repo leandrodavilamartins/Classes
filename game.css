@@ -8,3 +8,7 @@ body{
     flex-wrap: wrap;
     margin-top: 5vh;
 }
+
+.body{
+    background-color: red;
+}

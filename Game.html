@@ -31,7 +31,13 @@
                 let my_card = document.getElementById(`${index}`);
                 console.log(my_card);
 
-                my_card.setAttribute('style', 'transform:rotate(20deg);transition:1s;transition-timing-function: linear;');
+                my_card.setAttribute('style', 'transform:rotate(20deg);transition:0.5s;transition-timing-function: linear;');
+
+                let body = document.querySelector('body');
+                body.setAttribute('class','body');
+                setInterval(() =>{
+                    body.setAttribute('style','background-color: white;') // change the background color to white 
+                },2000);
 
             },3000);
         
